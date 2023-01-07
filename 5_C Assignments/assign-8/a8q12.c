@@ -1,19 +1,13 @@
 #include <stdio.h>
+#include<string.h>
 void main(){
-    char str[100];
-    char *p;
-    int  vCount=0,cCount=0,cb;
-    printf("Enter any string: ");
-    fgets(str, 100, stdin);
-    p=str;
-    while(*p!='\n'){
-        if(*p=='A' ||*p=='E' ||*p=='I' ||*p=='O' ||*p=='U'
-        		||*p=='a' ||*p=='e' ||*p=='i' ||*p=='o' ||*p=='u')
-            vCount++;
-        else if (*p !=' ')
-            cCount++;
-        p++;
-    }
-    printf("Number of Vowels : %d\n",vCount);
-    printf("Number of Consonants : %d",cCount);
+	char *s,str[100];
+	int len,i;
+	printf("\nENTER A STRING: ");
+	scanf("%[^\n]s",str);
+    s=str;
+	len=strlen(s);
+	printf("\nTHE REVERSE OF THE STRING IS:");
+	for(i=len;i>=0;i--)
+		printf("%c",*(s+i));
 }

@@ -1,14 +1,16 @@
 #include <stdio.h>
 
 int main(){
-	int arr[10],i,sum;
-	int *parr = arr;
-	printf("Enter the Array Items = ");
-	for (i = 0; i < 10; i++){
-		scanf("%d", parr + i);
-	}
-	for (i = 0; i < 10; i++){
-		sum = sum + *(parr + i);
-	}
-	printf("\nThe Sum of Array Items = %d\n", sum);
+    int arr[10], *max, i;
+    printf("Enter 10 integers:\n");
+    for ( i = 0 ; i < 10 ; i++ )
+        scanf("%d", &arr[i]);
+    max=arr;
+    *max = *arr;
+    for (i = 1; i < 10; i++){
+    if (*(arr+i) > *max){
+       *max = *(arr+i);
+    }
+    }
+    printf("Maximum element is %d.\n", *max);
 }
