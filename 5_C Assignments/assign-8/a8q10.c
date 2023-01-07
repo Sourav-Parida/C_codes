@@ -10,12 +10,12 @@ int main()
             scanf("%d",&arr[i][j]);
         }
     }
-    p=arr[];
+    p=arr[0];
     int lg = *p;
     for(i=0;i< 3;i++){
         for(j=0;j<3;j++){
-            if(*(p+10*i+j)>lg){
-                lg = *(p+10*i+j);
+            if(*((p+10*i)+j)>lg){
+                lg = *((p+10*i)+j);
             }
         }
     }
