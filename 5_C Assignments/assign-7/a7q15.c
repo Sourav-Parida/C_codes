@@ -36,7 +36,7 @@ for(i=0;i<3;i++){
 
 int ar2[3][3]; 
     /* Stored values into the array*/
-    printf("Input elements in the 2nd matrix :\n");
+    printf("\nInput elements in the 2nd matrix :\n");
 for(i=0;i<3;i++){
     for(j=0;j<3;j++){
 	    printf("element - [%d],[%d] : ",i,j);

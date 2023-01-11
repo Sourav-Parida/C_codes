@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main(){
 	int arr[10],i,sum;
 	int *parr = arr;
 	printf("Enter the Array Items = ");

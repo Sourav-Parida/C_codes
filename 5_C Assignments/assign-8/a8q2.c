@@ -5,14 +5,9 @@ void main (){
     scanf("%d,%d",&a,&b);
     p1 = &a;
     p2 = &b;
-    r = *p1 + *p2;
-    printf ("Addition= %d\n",r);
-    r= *p1 - *p2;
-    printf ("Subtraction= %d\n",r);
-    r= *p1 * *p2;
-    printf ("Multiplication= %d\n",r);
-    r= *p1 / *p2;
-    printf ("Division= %d\n",r);
-    r= *p1 % *p2;
-    printf ("Modulus division= %d\n",r);
+    printf ("Addition= %d\n",*p1 + *p2);
+    printf ("Subtraction= %d\n",*p1 - *p2);
+    printf ("Multiplication= %d\n",*p1 * *p2);
+    printf ("Division= %d\n",*p1 / *p2);
+    printf ("Modulus division= %d\n",*p1 % *p2);
 }

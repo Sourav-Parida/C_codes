@@ -11,13 +11,14 @@ int main()
         }
     }
     p=arr[0];
-    int lg = *p;
-    for(i=0;i< 3;i++){
-        for(j=0;j<3;j++){
-            if(*((p+10*i)+j)>lg){
-                lg = *((p+10*i)+j);
+    int lg = 0;
+    for(i=0;i<9;i++){
+            if(*(p+i)>lg){
+                lg = *(p+i);
             }
         }
-    }
+    for(i=0;i<9;i++){
+            printf("%d ", *(p + i));
+        }
     printf("Maximum element is %d.\n",lg);
 }

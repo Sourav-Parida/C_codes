@@ -1,5 +1,5 @@
 #include <stdio.h>
- 
+
 void swap(int* xp, int* yp){
     int temp = *xp;
     *xp = *yp;
@@ -19,9 +19,12 @@ void printArray(int arr[], int size){
     printf("\n");
 }
 void main(){
-    int arr[] = { 5, 1, 4, 2, 8 };
+    int arr[10];
+    printf("Enter 10 integers:");
+    for ( int i = 0 ; i < 10 ; i++ )
+        scanf("%d", &arr[i]);
     int n = sizeof(arr) / sizeof(arr[0]);
     bubbleSort(arr, n);
-    printf("Sorted array: \n");
+    printf("Sorted array:");
     printArray(arr, n);
 }
