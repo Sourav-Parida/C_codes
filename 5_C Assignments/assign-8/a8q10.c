@@ -17,8 +17,8 @@ int main()
                 lg = *(p+i);
             }
         }
-    for(i=0;i<9;i++){
+    /*for(i=0;i<9;i++){
             printf("%d ", *(p + i));
-        }
+        }*/
     printf("Maximum element is %d.\n",lg);
 }
